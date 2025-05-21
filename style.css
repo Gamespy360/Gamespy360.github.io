@@ -14,6 +14,7 @@ body{
     gap: 1rem;
 }
 .playerBlue{
+    font-size: 4rem;
     background-color: #6DE1D2;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -24,6 +25,7 @@ body{
     padding-top: 30vmin;
 }
 .playerRed{
+    font-size: 4rem;
     background-color: #F75A5A;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
