@@ -11,13 +11,21 @@
         <p id="msg">WINNER</p>
         <button id="new-btn">New Game</button>
     </div>
-    <main>
+    <main class="main">
         <h1>TIC TAC TOE</h1>
+        
         <div class="container">
-            <div class="playerBlue">
-                <p>PLAYER</p>
-                <p>BLUE'S</p>
-                <p>TURN</p>
+            <div class="turn">
+                <div class="blue ">
+                    <p>PLAYER</p>
+                    <p>BLUE'S</p>
+                    <p>TURN</p>
+                </div>
+                <div class="red">
+                    <p>PLAYER</p>
+                    <p>RED'S</p>
+                    <p>TURN</p>
+                </div>
             </div>
             <div class="game">
                 <button class="box"></button>
@@ -30,10 +38,9 @@
                 <button class="box"></button>
                 <button class="box"></button>
             </div>
-            <div class="playerRed">
-                <p>PLAYER</p>
-                <p>RED'S</p>
-                <p>TURN</p>
+            <div class="players">
+                <div class="playerRed"></div>
+                <div class="playerBlue"></div>
             </div>
         </div>
         <button id="reset-btn">Reset</button>
