@@ -5,6 +5,9 @@ let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+let turn = document.querySelector(".turn");
+let blue = document.querySelector(".blue");
+let red = document.querySelector(".red");
 
 let turnO = true;
 const winPatterns = [
@@ -24,8 +27,10 @@ const resetGame = () =>{
     msgContainer.classList.add("hide");
 }
 if(turnO===true){
+    blue.style = "1";
     bluePlayer.style.opacity = "1";
     redPlayer.style.opacity = "0.15";
+    red.style.opacity = '0.15';
 }
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
@@ -34,14 +39,20 @@ boxes.forEach((box) => {
             box.innerText = "O";
             turnO = false;
             box.style.backgroundColor = '#6DE1D2';
-            bluePlayer.style.opacity = "0.15";
-            redPlayer.style.opacity = "1";
+            // bluePlayer.style.opacity = "0.15";
+            // redPlayer.style.opacity = "1";
+            red.style.opacity = '0.15';
+            blue.style.opacity = '1';
+            blue.style.backgroundColor = '#6DE1D2';
         }else{
             box.innerText = "X";
             turnO = true;
             box.style.backgroundColor = '#F75A5A';
-            bluePlayer.style.opacity = "1";
-            redPlayer.style.opacity = "0.15";
+            // bluePlayer.style.opacity = "1";
+            // redPlayer.style.opacity = "0.15";
+            red.style.opacity = '1';
+            blue.style.opacity = '0.15';
+            red.style.backgroundColor = '#F75A5A';
         }
         box.disabled = true;
         checkWinner();
